@@ -3,6 +3,23 @@
       en: Current issues and changes
       de: Aktuelle Probleme und Änderungen
   items:
+      - id: 13599
+        en:
+           title: Loading or refreshing caches takes an unusual long time!
+           content: |
+               At the moment the GCVote cache rating service seems to have problems, which is causing longer loading times when downloading or refreshing a geocache in c:geo.
+               
+               Please disable the service in c:geo Start → Menu (three-dot icon) → Settings → Services (scroll down to Additional Services) to improve cache loading/refreshing time.
+               
+               As the GCVote service is no longer maintained, we might remove or replace it in c:geo soon.
+        de:
+           title: Das Laden oder Aktualisieren von Caches dauert ungewöhnlich lang!
+           content: |
+               Momentan hat der Cache-Bewertungsdienst GCVote scheinbar Probleme, was zu einer längeren Ladezeit beim Herunterladen oder Aktualisieren von Geocaches in c:geo führt
+               
+               Bitte deaktiviere diesen Dienst unter c:geo Start → Menü (Drei-Punkt Symbol) → Einstellungen → Dienste (herunterscrollen zu Weitere Dienste) um die Ladezeit beim Laden/Aktualisieren von Caches zu verbessern.
+               
+               Da der GCVote-Dienst nicht mehr gewartet wird, werden wir diesen in c:geo wahrscheinlich entfernen oder ersetzen.
       - id: 13209
         en:
            title: Maps.me is no longer working when started from c:geo!
@@ -21,24 +38,6 @@
                Wir haben ein Supportticket bei maps.me aufgemacht. Bislang haben wir allerdings noch keine Rückmeldung von maps.me erhalten. Du kannst helfen, indem du ebenfalls eine Fehlermeldung an maps.me sendest um sie darauf aufmerksam zu machen.
 
                c:geo-Anwender haben uns Workarounds für technisch Versierte vorgeschlagen, siehe [diesen Bugtracker-Issue](https://github.com/cgeo/cgeo/issues/13209) für Details.
-      - id: 12667
-        en:
-            title: The favorite percentage and amount of logs are no longer shown!
-            content: |
-                This bug has been fixed meanwhile. Please update to the latest c:geo version.
-        de:
-            title: Die Favoritenquote und die Anzahl der Logs werden nicht mehr angezeigt!
-            content: |
-                Dieser Fehler wurde inzwischen behoben. Bitte aktualisiere auf die neueste c:geo Version.
-      - id: 12673
-        en:
-            title: Sending a geocache log with an image attached returns an error message!
-            content: |
-                This bug has been fixed meanwhile. Please update to the latest c:geo version.
-        de:
-            title: Das Senden eines Geocache-Logs mit angehangenem Bild liefert eine Fehlermeldung zurück!
-            content: |
-                Dieser Fehler wurde inzwischen behoben. Bitte aktualisiere auf die neueste c:geo Version.
       - id: nearby-limit
         en:
             title: The nearby search now shows more than 20 caches!
