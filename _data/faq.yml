@@ -1201,21 +1201,6 @@
                 Um volle Kompatibilität mit c:geo zu erhalten, konfiguriere daher bitte, dass Lab2Gpx bei der Erstellung deines GPX das Code-Präfix "AL" verwendet.
                 
                 Zusätzlich solltest du "Gezipptes GPX mit Wegpunkten" beim Herunterladen auswählen für beste Resultate in c:geo.
-      - id: ALC_stage
-        en:
-            title: Why are the stages of Adventure Lab caches not shown?
-            content: |
-                There is no final information available from Groundspeak yet, how Adventure Labs will be implemented into their application interfaces and/or websites.
-                Therefore Groundspeak explicitly asked us to include this restriction, which is also present in other Geocaching apps. In spirit of good collaboration of c:geo and Groundspeak we decided to respect their wishes for now.
-                
-                If we would include all currently available data for all member types, we might later end up with removing functions, if they are no longer available by Groundspeak's future interfaces.
-        de:
-            title: Warum werden die Stationen der Adventure Lab-Caches nicht angezeigt?
-            content: |
-                Es gibt seitens Groundspeak noch keine finale Information darüber, wie Adventure Labs künftig in ihre App-Schnittstelle und/oder ihre Webseite implementiert werden.
-                Daher hat uns Groundspeak explizit darum gebeten diese Einschränkung aufzunehmen, die auch so in anderen Geocaching-Apps existiert. Im Sinne einer guten Zusammenarbeit von c:geo und Groundspeak haben wir entschieden, ihrem Wunsch momentan zu entsprechen.
-                
-                Wenn wir alle momentan verfügbaren Daten für beide Arten von Mitgliedern aufnehmen würden, könnten es später damit enden, dass wir Funktionen wieder entfernen müssten, wenn sie in der künftigen Groundspeak-Schnittstelle nicht mehr verfügbar sind.
       - id: ALC_disable
         en:
             title: I don't want to see Adventure Lab caches in c:geo. How to disable it?
