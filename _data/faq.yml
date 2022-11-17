@@ -1217,9 +1217,6 @@
                 We are still working on how we can best include Adventure Labs into c:geo and are also in contact with Groundspeak. We want to evaluate, if we find a mode of cooperation for using their planned official application interface to access Adventure Labs.
                 There is no final information yet about their conditions and limitations for future access to Adventure Lab data.
                 
-                We think it would at least be needed to have all stages and their description available in c:geo. This would allow a better planning of geocaching trips and further improve the interworking between c:geo and the Adventure Lab app.
-                If you also feel that Groundspeak should design their planned application interface for third party apps in a more elaborate way than just providing the header coordinates of adventure lab caches, please let them know.
-                
                 If Groundspeak offers fair conditions and an acceptable functionality range in their application interface, it might be, that its possible to provide a better implementation with more functions in c:geo.
                 It might however also end up with the current state, if we are unable to find an agreement with Groundspeak or the conditions are considered too strict by our developer team.
                 Even worse, it might also be possible, that we need to remove Adventure Labs from c:geo in future, if they close the public access to that information and there is no further acceptable way to access this information.
@@ -1228,9 +1225,6 @@
             content: |
                 Wir arbeiten noch daran, wir wir Adventure Labs zukünftig am besten in c:geo integrieren und sind hierzu auch in Kontakt mit Groundspeak. Wir wollen herausfinden, ob wir einen Weg der Zusammenarbeit finden, um über ihre geplante offizielle App-Schnittstelle auf Adventure Labs zuzugreifen.
                 Es gibt noch keine abschließende Information über die Bedingungen und Limitierungen bezüglich des zukünftigen Zugriffs auf Adventure Lab-Daten.
-                
-                Wir denken, dass zumindest alle Stationen und ihre Beschreibungen in c:geo verfügbar sein sollten. Dies würde eine bessere Planung von Geocaching-Trips und ein besseres Interworking zwischen c:geo und der Adventure Lab-App erlauben.
-                Wenn du auch denkst, dass Groundspeak ihre geplante Schnittstelle für Dritt-Apps etwas ausgefeilter anbieten sollte als nur die Startkoordinaten von Adventure Lab Caches zu übermitteln, lass es sie bitte wissen.
                 
                 Wenn Groundspeak faire Bedingungen und eine akzeptable Funktionalität über ihre App-Schnittstelle anbietet, kann es sein, dass wir eine bessere Implementierung mit mehr Funktionen in c:geo anbieten können.
                 Es kann aber auch beim aktuellen Stand bleiben, wenn wir keine Vereinbarung mit Groundspeak erzielen oder die Bedingungen von unserem Entwickler-Team als zu strikt angesehen werden.
