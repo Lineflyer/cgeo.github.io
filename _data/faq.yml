@@ -12,7 +12,6 @@
            title: Erstellen und/oder Hinzufügen von Caches zu einer Online-Lesezeichenliste schlägt fehl!
            content: |
                Dies wird durch eine Änderung auf der Webseite verursacht und wir sind dabei eine Fehlerkorrektur mit dem nächsten Update von c:geo bereitzustellen.
-  items:
       - id: 13742
         en:
            title: Why did the online map of mapy.cz stop working?
