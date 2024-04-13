@@ -3,15 +3,53 @@
       en: Current issues and changes
       de: Aktuelle Probleme und Änderungen
   items:
-      - id: 13759
+      - id: 15543
         en:
-           title: Creating and/or adding caches to an online bookmark list fails!
+           title: Login fails! / Missing trackable data! / Missing live map data!
            content: |
-               This is caused by a website change and we are on our way to provide a fix with the next update of c:geo.
+               These issues are caused by several website changes on geocaching.com. 
+               A first update for c:geo is already available, some issues are still being worked on.
+               We have created a [status overview page](https://github.com/cgeo/cgeo/issues/15555) for those issues.
         de:
-           title: Erstellen und/oder Hinzufügen von Caches zu einer Online-Lesezeichenliste schlägt fehl!
+           title: Login schlägt fehl! / Fehlende Trackable-Daten! / Fehlende Daten auf der Live-Karte!
            content: |
-               Dies wird durch eine Änderung auf der Webseite verursacht und wir sind dabei eine Fehlerkorrektur mit dem nächsten Update von c:geo bereitzustellen.
+               Diese Probleme werden durch eine Reihe von Änderungen auf der geocaching.com-Webseite verursacht. 
+               Ein erstes Update für c:geo ist bereits verfügbar, an einigen Dingen arbeiten wir noch.
+               Wir haben hierzu eine [Statusseite](https://github.com/cgeo/cgeo/issues/15555) eingerichtet.
+      - id: 14950
+        en:
+           title: I am no longer recognized as premium member of geocaching.com!
+           content: |
+                On the very first startup after a version upgrade of the app c:geo might not be able to detect your premium membership.
+                
+                We are workin on that problem.
+                As a workaround please force close c:geo (or restart your device) to enforce a new login by c:geo.
+                Afterwards your membership status should be shown correctly and all premium functions should be available again.
+        de:
+           title: Ich werde nicht mehr als Premium-Mitglied von geocaching.com erkannt!
+           content: |
+                Beim allerersten Start nach einer Aktualisierung der App kann es passieren, dass c:geo deinen Mitgliedsstatus nicht erkennen kann.
+                
+                Wir arbeiten an diesem Problem.
+                Als Abhilfe beende bitte c:geo zwangsweise (oder starte dein Gerät neu), um ein erneutes Einloggen durch c:geo zu erzwingen.
+                Danach sollte dein Mitgliedsschafts-Status korrekt angezeigt werden und alle Premium-Funktionen sollten verfügbar sein.
+      - id: 14001
+        en:
+           title: Cannot read or update maps or map themes
+           content: |
+                This is most likeley a permissions problem. Specifically some Samsung mobiles seem to be affected, sometimes also other vendors.
+                To gain access to map and map theme files stored in their configured folders, c:geo calls a system app called "external storage". This app needs to have access to those files to be able to provide them to c:geo.
+                Please check, if the following setting is enabled:
+                Samsung devices: Settings → Apps → Special Access (from "Three dots menu") → All files access → External Storage
+                Other vendors: (should be similar, but we don't know the exact navigation yet)
+        de:
+           title: Kann Karten oder Kartendesign-Dateien nicht lesen
+           content: |
+                Das ist wahrscheinlich ein Rechteproblem. Besonders einige Samsung-Modelle scheinen betroffen zu sein, manchmal auch andere Hersteller.
+                Um Zugriff auf die eigenen Karten- und Kartendesign-Dateien zu erhalten, nutzt c:geo eine Systemapp namens "Externer Speicher". Diese benötigt Zugriff auf die Dateien, um sie c:geo bereitzustellen.
+                Bitte prüfe, ob folgende Einstellung aktiv ist:
+                Samsung Geräte: Einstellungen → Apps → Spezieller Zugriff (im "Drei Punkte-Menü") → Zugriff auf alle Dateien → Externer Speicher
+                Andere Hersteller: (sollte ähnlich sein, aber wir kennen den genauen Pfad noch nicht)
       - id: 13742
         en:
            title: Why did the online map of mapy.cz stop working?
@@ -41,24 +79,6 @@
                
                Bei den meisten Geräten findest du zu diesem Zweck Energiespar-Präferenzen in den Einstellungen deines Gerätes. Stell sicher, dass du dort Hintergrundaktivitäten für c:geo erlaubst.
                Bei aktuellen Geräten von Samsung findest du dies z.B. unter Einstellungen → Apps → c:geo → Akku, wo du "Unbeschränkt" einstellen solltest.
-      - id: 13209
-        en:
-           title: Maps.me is no longer working when started from c:geo!
-           content: |
-               This problem started with a recent update of maps.me. As we haven't changed anything on c:geo side with regard to the maps.me connection, our best guess is that 
-               there have been changes on the maps.me side with their new version which causes this. 
-               
-               We have opened a support ticket with them, but so far no response from their side, though. You can help by also reporting this bug to maps.me to increase attention.
-
-               Users of c:geo have provided us with workarounds for the techy savvy, see [this bugtracker issue](https://github.com/cgeo/cgeo/issues/13209) for details.
-        de:
-           title: Maps.me kann von c:geo nicht mehr gestartet werden!
-           content: |
-               Das Problem begann mit einem kürzlichen Update von maps.me. Da wir in c:geo in Bezug auf die maps.me-Anbindung nichts geändert haben, vermuten wir, dass es an der neuen Version von maps.me liegt. 
-               
-               Wir haben ein Supportticket bei maps.me aufgemacht. Bislang haben wir allerdings noch keine Rückmeldung von maps.me erhalten. Du kannst helfen, indem du ebenfalls eine Fehlermeldung an maps.me sendest um sie darauf aufmerksam zu machen.
-
-               c:geo-Anwender haben uns Workarounds für technisch Versierte vorgeschlagen, siehe [diesen Bugtracker-Issue](https://github.com/cgeo/cgeo/issues/13209) für Details.
       - id: android12
         en:
             title: I am using Android 12 and c:geo is not offered to open web links!
@@ -77,11 +97,12 @@
                 Luckily there is an easy workaround: Go to your device app settings, open the setting for the Groundspeak app and completely disable the function, that it is opened for supported weblinks.
                 Afterwards activate it for c:geo as described above.
 
-                One of cgeo's users reported the following steps as working on Xiaomi mobiles (thanks, rouroni):
+                Some of cgeo's users reported the following steps as working on Xiaomi and Poco mobiles:
                 - Install and open app "Hidden Settings for Miui" (It's in the PlayStore)
                 - Select Settings --> Manage Aplications
                 - If official geocaching app is installed, choose it --> select "Open by definition" --> "Add Link" ---> remove all selected --> Back and then disable "Open compatible Links".
                 - Choose c:geo --> Enable "Open compatible Links" --> Select all the links.
+                - For Poco devices tap on "Open by default" in app settings, then "open supported links", then check the links you want to have opened in c:geo
                 
         de:
             title: Ich nutze Android 12 und c:geo wird nicht angeboten um Weblinks zu öffnen!
@@ -100,12 +121,12 @@
                 Glücklicherweise gibt es einen einfachen Workaround: Gehe in die App-Einstellungen deines Gerätes und dort in die Einstellungen der Groundspeak-App und deaktiviere die Funktion, dass unterstützte Webseiten dort geöffnet werden, komplett.
                 Aktiviere danach diese Funktion wieder für c:geo wie oben beschrieben.
 
-                Ein cgeo-Anwender hat folgenden Weg für Xiamo-Handys beschrieben (danke, rouroni):
+                Einige cgeo-Anwender haben folgenden Weg für Xiamo- und Poco-Handys beschrieben:
                 - Installiere und starte die App Hidden Settings for Miui (im PlayStore zu finden)
                 - Wähle Settings --> Manage Aplications
                 - Falls die offizielle Geocaching App installiert ist, wähle sie aus --> wähle "Open by definition" --> "Add Link" ---> lösche alle Zuordnungen --> dann zurück und wähle "Open compatible Links" ab.
                 - Wähle dann c:geo --> Aktiviere "Open compatible Links" --> Wähle alle Zuordnungen aus.
-
+                - Für Poco-Geräte wähle "Open by default", dann "open supported links", und wähle dann die Adressen aus, die sich in c:geo öffnen sollen
 - id: getting-started
   title:
       en: Getting started
@@ -267,13 +288,13 @@
         en:
             title: Is it possible to edit an existing geocache log with c:geo?
             content: |
-                No, this is not possible and we do not have plans to implement this on short term.
-                Please use the geocaching website to edit your log after you posted it.
+                Yes, this is possible.
+                Tap on your log, a context menu will appear. Select "Edit log".
         de:
             title: Ist es möglich mit c:geo ein existierendes Log zu bearbeiten?
             content: |
-                Nein, das ist nicht möglich und wir planen derzeit nicht dies einzubauen.
-                Bitte nutze für das Bearbeiten von Logs, die du schon gesendet hast, die Geocaching-Webseite.
+                Ja, das ist möglich.
+                Tippe auf dein Log, ein Kontextmenü erscheint. Wähle "Log bearbeiten".
       - id: data-on-sd
         en:
             title: How can I store c:geo data on my SD card?
@@ -533,6 +554,8 @@
 
                 If you are on a minimum Android version of 4.1 but your device has no GPS and you still want to install c:geo on it, you have to install c:geo manually by downloading the APK file [here](https://github.com/cgeo/cgeo/releases/latest).
                 But be aware, that you cannot navigate to caches without GPS!
+                
+                If you are a Chromebook user and want to install c:geo, have a look at [this article](https://chromeready.com/11539/install-apks-chromebook-without-the-developer-mode/) for more details on how to sideload (manually install) an APK on those devices.
         de:
             title: Ich kann c:geo nicht über Google Play installieren!
             content: |
@@ -544,6 +567,8 @@
 
                 Wenn du ein Gerät mit einer Android-Version von mindestens 4.0 nutzt, das aber kein GPS unterstützt, und dennoch c:geo darauf installieren möchtest, musst du c:geo manuell durch Herunterladen der [APK-Datei](https://github.com/cgeo/cgeo/releases/latest) installieren.
                 Bitte beachte, dass eine Navigation zu einem Cache ohne GPS nicht möglich ist!
+                
+                Wenn Du ein Chromebook verwendest und darauf c:geo installieren möchtest, lies [diesen Artikel](https://chromeready.com/11539/install-apks-chromebook-without-the-developer-mode/) (Englisch) für Informationen, wie Du eine Installationsdatei manuell auf diesem Gerät installieren kannst.
       - id: legacy
         en:
             title: I do see a warning in c:geo that my device is no longer supported!
